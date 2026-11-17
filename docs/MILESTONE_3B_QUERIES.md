@@ -1,0 +1,11 @@
+# M3b query milestone (2026-11-17)
+
+Port standalone deterministic side_room, is_visible and overtaking::is_target. Keep the accepted sort/overlap/MoveState and M3a field contracts intact. Implementation: Terra 5.6 through Herdr; review: Luna 6. Root coordinates and verifies.
+
+Required behavior: side-room scans the supplied peer order, uses strict position/lane bounds, ignores same-lane peers and retains the last qualifying inner blocker index (index into the supplied peers). Do not silently exclude finishers or add owner filtering beyond the declared peer-list contract. Return both permissions, both spaces, inner-blocker lane and index with explicit absent sentinel. Padded capacity is 32, active count is explicit; require finite f32 host inputs and valid counts. Visibility preserves the source f32 quotient and f64 cone expression/f32 store. Overtaking narrows f64 inputs to f32 before its boundary comparisons and preserves direct-blocker and blocked/unblocked decisions. Expose the public Boolean-input predicate, not a simulated Python lazy callback or new target policy. Checked APIs reject invalid inputs; low-level kernels are prevalidated.
+
+Evidence: independently compile unchanged source overtaking.rs and mechanically extracted source side_room/is_visible plus required structs. Record revision, exact extraction scope, oracle/fixture/source hashes. Rust expected output must cover empty/full peer rows, rail/threshold edges and adjacent f32 values, last-versus-nearest blocker, reordered peers, padding, vision cone boundary, and overtaking gap/speed/narrowing boundaries. Compare every side-room field and flags as exact bits (absent lane checked by sentinel), eager/JIT, plus real batch versus scalar independence. Retain explicit JAX x64 guards and the source mixed precision; never globally enable x64 at import.
+
+Acceptance: Terra focused tests, Luna independent review and focused run, coordinator full suite and independently rebuilt Rust fixture/hash/source-clean checks. Update STATUS/HANDOFF/SUPPORTED_FUNCTIONS/REVIEW_M3B_QUERY with current scope and next steps.
+
+After helper acceptance, supplied-target moving-lane integration is the next separate task. Automatic targets/pacing, stochastic controllers, broader M3 and GPU evaluation remain unimplemented. Do not claim full M3b from this query milestone.

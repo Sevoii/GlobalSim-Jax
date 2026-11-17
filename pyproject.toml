@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "globalsim-jax"
+version = "0.1.0"
+description = "Narrow, fixture-backed JAX numerical foundation for GlobalSim"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "AGPL-3.0-only"}
+dependencies = ["jax>=0.4.36"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+globalsim-jax = "globalsim_jax.cli:main"
+
+[tool.setuptools]
+packages = ["globalsim_jax"]
+
+[tool.setuptools.package-data]
+globalsim_jax = ["global_parameters.json", "course_10101.json"]

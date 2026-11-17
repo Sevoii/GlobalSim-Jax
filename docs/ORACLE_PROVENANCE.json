@@ -1,0 +1,233 @@
+{
+  "recorded": "2026-11-17",
+  "reference_revision": "58da7bc4693d9aa8f6340e348cba1c5b5fb5a856",
+  "scope": "Accepted M1/M2 numerical and flat-loop subset, M3a fixed-field behavior, M3b standalone sort/overlap/MoveState/query helpers and restricted constant-width supplied-target moving-field integration. Independent Rust subset evidence only; automatic targeting/pacing, broader M3, skills, full engine and GPU parity remain unsupported.",
+  "files": [
+    {
+      "origin": "rust_reference",
+      "path": "src/json.rs",
+      "sha256": "36fbef2a58dd2b47468d55e3978819521fbd3d901b17f956ac7896207c0fdb26"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "src/replay_frames.rs",
+      "sha256": "18bcefe3878f7f5944e94f0e5ac74747b36a2ec03eb36bbea166b9a399e225ad"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "src/retail_physics.rs",
+      "sha256": "f814a33ae71667110622398f2e6035a917687287334bacf8dd464069e01920e7"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "src/retail_geometry.rs",
+      "sha256": "fad8a039db00df4ff18d86794e83277f236219f05b5a49fd44de0a785a2e8449"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "src/race_solver_retail.rs",
+      "sha256": "883df7c4a6a5098d34c370e60c776172daf06ca1a46c9410280bd9e821ee8064"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "src/hp_policy.rs",
+      "sha256": "52680265dd8c7d7437b48f026230bcd960a7eb0d8ffaa7d7d82261808b2fba78"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "src/race_solver_builder.rs",
+      "sha256": "37de1164d2fb8dd7c5bf22050d97d000a9dc5cc2ddb6ceba2b492d5778192809"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "src/retail_initialization.rs",
+      "sha256": "7aa82bdda5ae14949a1ba27209c256be189508d6f252dce2cea0a51f5ad25a01"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "data/global_parameters.json",
+      "sha256": "4655bd004ad7a9a46104283fd42e9afb1c0e9835ccb1b86be47940c100fe99e1"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "data/course_geometry/10101.json",
+      "sha256": "ae75a726bd10e7270d8cb236e952bfce4c92bbb142e2eaffd5019ce8d4f183e1"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tools/geometry_oracle.rs",
+      "sha256": "072611841df98e451467873325630350c7a4b9640928465d9c9214ac092b752b"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tools/restricted_oracle.rs",
+      "sha256": "858a1934e1473b29777edd05ca03e676652199dda1700069a0a7da34e38313d0"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tests/fixtures/restricted_trace.json",
+      "sha256": "b56d914590c3ba7903c604bc68513d0c68e4de3b01403af236931fe1fab23928"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tests/fixtures/retail_geometry_port.json",
+      "sha256": "8f698e383ff47dfd93ae2d00c104c25be015221c0c62563277e354b0bcc21fb6"
+    },
+    {
+      "origin": "jax_project",
+      "path": "globalsim_jax/course_10101.json",
+      "sha256": "ae75a726bd10e7270d8cb236e952bfce4c92bbb142e2eaffd5019ce8d4f183e1"
+    },
+    {
+      "origin": "jax_project",
+      "path": "globalsim_jax/global_parameters.json",
+      "sha256": "4655bd004ad7a9a46104283fd42e9afb1c0e9835ccb1b86be47940c100fe99e1"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "src/race_field.rs",
+      "sha256": "ec7e3de1c4e9e36dfc5037e471f81222b27e01b85f41058ccb289a0afcab4882"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "src/race_field_retail.rs",
+      "sha256": "a22d2c23bbac735611156cb454ddcbb1b35692cea3fae3fa2794ee0010b29b63"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "src/retail_lane.rs",
+      "sha256": "95f4c535a6392faae5386e3db8f90ae8a09d01d5690c4e1279f7f43dc3a99a62"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "src/retail_sort.rs",
+      "sha256": "58716281a06fcc22476d2da29a1535ffbc405a000b8157b5828dcc82e5717d03"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "src/race_solver.rs",
+      "sha256": "73454123b1603c7b4a8ab1bf0a772ad78ad1f81662a0d712fa36f13680057a7a"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tools/field_oracle.rs",
+      "sha256": "f174ed6d1873ff1b16f46e43b9c2651bee9e0d57eee1e962cd3a2fce5ae42491"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tools/field_tick_oracle.rs",
+      "sha256": "4f118e00526eac8a226f5a1ae667c86042a91666e379cd0b34ee3bb5efed3f49"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tests/fixtures/field_query_trace.json",
+      "sha256": "970f2e024e52ab723674ebc2de884489c97868be09869992f22488032cac5146"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tests/fixtures/field_tick_trace.json",
+      "sha256": "62ff887cf93ce5e8de104f5307c019413e03cc672c145326ffcc0bb52808e166"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tools/lane_oracle.rs",
+      "sha256": "e49609dbfbdd2f4730f44f76dd931e9ab778a97ae90d9487982473ea577248bf"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tests/fixtures/lane_oracle.json",
+      "sha256": "f19bdcfa2472bbba57a455d5c10ede174d3f9594d6941ffcc653bcdf60ebc159"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tools/lane_move_oracle.rs",
+      "sha256": "7e26a4dbac70d8ae46bfac406aeb5cbcddad76cbff8cf52eb796232169edfac9"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tests/fixtures/lane_move_oracle.json",
+      "sha256": "38cda445f4849de54489e0e4cfc7f642d661f30415e2135222eddc726581cf7c"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tests/fixtures/retail_lane_port.json",
+      "sha256": "88c18bc8690720dcbb058762770836581b2c5bbfafbb28054172fbaa6115275a"
+    },
+    {
+      "origin": "rust_reference",
+      "path": "src/overtaking.rs",
+      "sha256": "503c12bb47bcadcde9df17f1c92510ad99cda3e4233cfd425382b46c00f1abf5"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tools/lane_query_oracle.rs",
+      "sha256": "a3576d56b24463f8fc5d4b2fcb9abd35465124192652a048472532e37ace1ea7"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tests/fixtures/lane_query_oracle.json",
+      "sha256": "dbec8b7e281f3cb3a78ffd2a6839bc875e35e56082110020ff2b217b68a2a4c5"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tools/moving_field_oracle.rs",
+      "sha256": "8688ebf5f7e498b4d2983f31bc29e1322a95c8f9787824248f22a585d7577838"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tests/fixtures/moving_field_trace.json",
+      "sha256": "1d788064937af9247544a7ffdea40d63192554c98ed1f94e1f59a346e7a8fa59"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tools/build_target_collect_oracle.py",
+      "sha256": "b8c1f5f58446e2111fabfb1695acf76fd6f137824e27ae16c633beae83bf1788"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tools/target_collect_oracle.rs",
+      "sha256": "787d4605eacf02c021ab0c0f6455ffc4d8a273ceef6629cf858ad7ff400f56a7"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tests/fixtures/target_collect_oracle.json",
+      "sha256": "683570c94837673694a3e0a98507de95fa8b3adbef51f30cc8b068e6a1440b45"
+    },
+    {
+      "origin": "jax_project",
+      "path": "globalsim_jax/lane_target.py",
+      "sha256": "b051c8f250a529e9929dceead0904d0746045587ff350727de169daa78e56a82"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tests/test_lane_target.py",
+      "sha256": "54341708aeb516e6e457426f470eb770c8b7a6f1a433d737c1682632c008f4f8"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tools/build_target_update_oracle.py",
+      "sha256": "663d73543fe6b9323ef52a321a7d9aac13da1b27e1d9424ec9560599ce6c8dfe"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tools/target_update_harness.rs",
+      "sha256": "c5c106a1220f80b03bbdddb003946a5c8d48966fa27e5629155437ce5433d3dc"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tools/target_update_oracle.rs",
+      "sha256": "ef8a285a4c9225ed452b9cf7d488ab819a6d5d10d4ab17034451ddb2a6c93a51"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tests/fixtures/target_update_oracle.json",
+      "sha256": "a2fb3bbb39533c7bd16caa69f387def776f92551a43590e97fa61ee06ba99047"
+    },
+    {
+      "origin": "jax_project",
+      "path": "tests/test_lane_target_update.py",
+      "sha256": "1952a44852f15d8a01797e20be9f82e34f5a1cac575e75efd76d5a1eb1df4e6d"
+    }
+  ],
+  "moving_field_oracle_scope": "Accepted restricted source-schedule adapter; exact extraction, real source dependencies, wrapper telemetry/terminal adaptations and schemas documented in tools/MOVING_FIELD_ORACLE.md. Nine cases, three independently generated wrong-order counterexamples. Not full-engine/GPU evidence."
+}
